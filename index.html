@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>project</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -12,11 +14,14 @@
         <div id="root">
 
             <header id="site_header">
-                <nav id="navbar" class="d-flex">
-                    <div class="logo">
 
+                <nav id="navbar" class="d-flex">
+
+                    <div class="logo">
+                        <img src="./assets/img/dark-logo.png" alt="">
                     </div>
                     <!-- /logo -->
+                    
                     <ul class="d-flex">
                         <li>
                             home
@@ -51,22 +56,48 @@
                     <!-- #search -->
                 </nav>
                 <!-- /#navbar -->
-                <div id="jumbotron">
-                    <h1></h1>
-                    <p></p>
-                    <button></button>
+                <div id="jumbotron" class="d-flex">
+
                     <div>
-                        <a href="#"></a>
+                        <h1>Distant learning for further expansion</h1>
+                        <p>Learning is a long life journey that in fact we never find the terminate stop. Stop searching, enjoy the process</p>
+                        <button class="button">
+                            <i class="fas fa-download"></i>
+                            Download free guide
+                        </button>
+                        <div>
+                            <a href="#">Have questions?
+                                <span class="color_acqua">
+                                    Get Free Sample
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <img src="./assets/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
+
+                    <div>
+                        <span>
+                            <div>
+                                <img src="./assets/img/maxcoach-shape-08.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/maxcoach-shape-08.png" alt="">
+                            </div>
+                        </span>
+                        <img src="./assets/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="" class="profilo">
+                        <img src="./assets/img/maxcoach-shape-07.png" alt="">
+                        <img src="./assets/img/maxcoach-shape-02.png" alt="">
+                    </div>
                 </div>
                 <!-- /#jumbotron -->
+
                 <div id="partners" class="d-flex">
                     <div v-for = "partner in partners">
                         <img src="" alt="">
                     </div>
                 </div>
                 <!-- /#partners -->
+                
             </header>
             <!-- /#site_header -->
     
@@ -227,7 +258,7 @@
             <footer id="site_footer">
 
                 <div>
-                    
+
                     <div>
                         <h5></h5>
                         <ul id="addres">

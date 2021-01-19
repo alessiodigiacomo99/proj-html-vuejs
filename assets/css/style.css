@@ -4,10 +4,157 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Roboto;
+}
 ul{
     list-style: none;
 }
 
 .d-flex{
     display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+.button{
+    color: white;
+    background-color: #1fad96;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.color_acqua{
+    color: #1fad96;
+}
+/* /utility class */
+#navbar{
+    height: 60px;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px #f3f6f5;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul{
+    text-transform: capitalize;
+    margin: 50px;
+}
+
+#navbar ul li{
+    margin: 15px;
+    display: flex;
+    color: #48495f;
+    cursor: pointer;
+}
+
+#navbar ul li i{
+    margin: 5px 2px;
+    font-size: 0.7rem;
+}
+
+#search{
+    position: relative;
+}
+
+#search input{
+    padding: 10px;
+    background-color: #f3f6f5;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    outline: 0;
+}
+
+#search i{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #25ab94;
+    cursor: pointer;
+}
+/* /navbar */
+#jumbotron{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#jumbotron > div:first-child{
+    width: 30%;
+}
+
+#jumbotron h1{
+    color: #48495f;
+    margin-bottom: 20px;
+}
+
+#jumbotron p, #jumbotron a{
+    color: #aeadae;
+}
+
+#jumbotron button{
+    margin: 20px 0;
+}
+
+#jumbotron a span{
+    font-weight: 700;
+}
+
+#jumbotron a span i{
+    vertical-align: bottom;
+}
+
+#jumbotron > div:nth-child(2){
+    height: 600px;
+    position: relative;
+    width: 800px;
+}
+
+#jumbotron > div:nth-child(2) > span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+#jumbotron > div:nth-child(2) > span > div{
+    margin: 20px 0;
+}
+
+#jumbotron > div:nth-child(2) .profilo{
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#jumbotron > div:nth-child(2) > img:nth-child(3){
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    z-index: 0;
+}
+
+#jumbotron > div:nth-child(2) > img:last-child{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    z-index: 0;
 }
