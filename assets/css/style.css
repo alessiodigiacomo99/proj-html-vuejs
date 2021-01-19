@@ -91,6 +91,8 @@ a{
 #jumbotron{
     align-items: center;
     justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
 }
 
 #jumbotron > div:first-child{
@@ -157,4 +159,88 @@ a{
     top: 20%;
     right: 5%;
     z-index: 0;
+}
+/* /jumbotron */
+#partners{
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.7;
+    padding: 50px 0;
+}
+/* /partners */
+/* /header */
+#courses{
+    background-color: #f3f6f5;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+#courses > div:first-child{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#courses h6{
+    text-transform: uppercase;
+    color: #aeadae;
+    text-align: center;
+}
+
+#courses h2{
+    text-transform: capitalize;
+    color: #48495f;
+    text-align: center;
+    margin: 10px;
+}
+
+#courses > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+}
+
+.corso{
+    flex-basis: 40%;
+    margin: 10px;
+    align-items: center;
+}
+
+.corso > div:first-child{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.corso > div:first-child > img{
+    width: auto;
+    height: 100%;
+}
+
+.corso > div.d-flex{
+    flex-direction: column;
+}
+
+.corso .costo{
+    color: #1fad96;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.corso .info{
+    color: #48495f;
+    font-weight: 900;
+}
+
+.corso .lezioni{
+    color: #aeadae;
+    margin: 10px 0;
+}
+
+.corso > div.d-flex span{
+    margin-right: 10px;
 }
