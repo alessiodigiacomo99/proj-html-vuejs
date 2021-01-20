@@ -69,9 +69,48 @@ let root = new Vue ({
             },
             
         ],
-        recensioni:[],
+        recensioni:[
+            {
+                titolo:"It's a choice of quality for people with special needs",
+                p:"I'm a very strict person so I require everything to be organized and neat. Then, i'll be able to make things right and shine. MaxCoach guys just got me",
+                img:'01',
+                nome:'florence themes',
+                lavoro:'/Multimedia Admin',
+            },
+            {
+                titolo:'High level of efficiency and scientific teaching methods',
+                p:'I am free to lear at m own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.',
+                img:'02',
+                nome:'mina hollace',
+                lavoro:'/Freelancer',
+            },
+            {
+                titolo:'Professional team of specialist and passionate mentors at reach',
+                p:'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+                img:'03',
+                nome:'madley pondor',
+                lavoro:'/IT Specialist',
+            },
+            {
+                titolo:'Professional team of specialist and passionate mentors at reach',
+                p:'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+                img:'04',
+                nome:'pippo pondor',
+                lavoro:'/Developer',
+            }
+        ],
+        counter: 0,
     },
     methods:{
-
+        next(){
+            if(this.counter == (this.recensioni.length - 1)){
+                this.counter = 0;
+            }else(this.counter++)
+        },
+        prev(){
+            if(this.counter == 0){
+                this.counter = (this.recensioni.length - 1);
+            }else(this.counter--)
+        }
     }
 })

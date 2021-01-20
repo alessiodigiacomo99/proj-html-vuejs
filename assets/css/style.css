@@ -23,6 +23,10 @@ i.fa-long-arrow-alt-right{
     vertical-align: middle;
 }
 
+.d-none{
+    display: none;
+}
+
 .button{
     color: white;
     background-color: #1fad96;
@@ -36,6 +40,14 @@ i.fa-long-arrow-alt-right{
 
 .color_acqua{
     color: #1fad96;
+}
+
+.color_blue{
+    color: #48495f;
+}
+
+.color_grey{
+    color: #aeadae;
 }
 /* /utility class */
 #navbar{
@@ -202,6 +214,7 @@ i.fa-long-arrow-alt-right{
     width: 90%;
     margin: auto;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .corso{
@@ -264,9 +277,6 @@ i.fa-long-arrow-alt-right{
     margin: 10px;
 }
 
-/* #smart_tutoring div.d-flex{
-    justify-content: center;
-} */
 #smart_tutoring{
     width: 90%;
     margin: auto;
@@ -296,3 +306,172 @@ i.fa-long-arrow-alt-right{
     font-weight: 700;
 }
 /* /smart_tutoring */
+#video{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 250px;
+}
+
+#video > div.profilo{
+    width: 700px;
+    height: 450px;
+    position: relative;
+    left: 50px;
+}
+
+#video div.profilo > div{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/home-2-popup-video-poster.jpg');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 10px 10px 0px lightgray;
+    z-index: 1;
+}
+
+#video > div.profilo img:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#video > div.profilo > img:nth-child(3){
+    position: absolute;
+    bottom: -30%;
+    right: -5%;
+    z-index: 0;
+}
+
+#video > div.profilo > img:nth-child(4){
+    position: absolute;
+    top: 10%;
+    left: -15%;
+    z-index: 0;
+}
+
+#video > div:nth-child(2){
+    margin: 0 100px;
+    width: 30%;
+}
+
+#video h6{
+    text-transform: uppercase;
+    color: #aeadae;
+    font-size: 1rem;
+}
+
+#video h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #48495f;
+    margin: 10px 0;
+}
+
+#video p{
+    color: #aeadae;
+    margin: 30px 0;
+}
+
+#video a{
+    color: #1fad96;
+    font-weight: 700;
+}
+/* /video */
+#recensioni{
+    width: 90%;
+    margin: auto;
+    background-color:  #f3f6f5;
+    padding: 50px 0;
+}
+
+#recensioni h6{
+    text-transform: uppercase;
+    color: #aeadae;
+    text-align: center;
+}
+
+#recensioni h2{
+    color: #48495f;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#recensioni p{
+    color: #aeadae;
+    margin: 30px 0;
+}
+
+#recensioni div.carte{
+    width: calc(100% / 3);
+}
+
+.active{
+    display: block;
+    animation-name: opacità;
+    animation-duration: 1s;
+}
+
+@keyframes opacità{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.attivo{
+    background-color: #48495f;
+}
+
+
+#recensioni .card{
+    padding: 25px;
+    margin: 5px;
+    background-color: white;
+}
+
+#recensioni .card h5{
+    color: #48495f;
+    text-transform: uppercase;
+}
+
+#recensioni div.carte div.card div.d-flex{
+    align-items: center;
+}
+
+#recensioni img{
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#recensioni > div.d-flex{
+    justify-content: center;
+    align-items: center;
+}
+
+#recensioni i{
+    margin: 0 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #aeadae;
+}
+
+#recensioni > div.d-flex > div.carte > div.d-flex{
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#recensioni .dot{
+    width: 0;
+    height: 0;
+    padding: 5px;
+    border: 2px solid #48495f;
+    border-radius: 50%;
+    margin: 5px;
+}
