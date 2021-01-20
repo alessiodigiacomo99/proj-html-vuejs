@@ -213,57 +213,59 @@
                 <!-- /#video -->
 
                 <section id="recensioni">
-                    <h6>great word about maxcoach</h6>
-                    <h2>Our <span class="color_acqua">top learners'</span> verbatim</h2>
+                    <div>
+                        <h6>great word about maxcoach</h6>
+                        <h2>Our <span class="color_acqua">top learners'</span> verbatim</h2>
 
-                    <div class="d-flex">
+                        <div class="d-flex">
 
-                        <div class="prev" @click= "prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                        <!-- /next -->
-    
-                        <div class="carte">
+                            <div class="prev" @click= "prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <!-- /next -->
+        
+                            <div class="carte">
 
-                            <div class="card" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'active': 'd-none' ">
-                                <h4 class="color_blue">{{recensione.titolo}}</h4>
-                                <p>{{recensione.p}}</p>
-                                <div class="d-flex">
-                                    <div>
-                                        <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
-                                    </div>
-                                    <div>
-                                        <h5>{{recensione.nome}}</h5>
-                                        <div class="color_grey">{{recensione.lavoro}}</div>
+                                <div class="card" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'active': 'd-none' ">
+                                    <h4 class="color_blue">{{recensione.titolo}}</h4>
+                                    <p>{{recensione.p}}</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>{{recensione.nome}}</h5>
+                                            <div class="color_grey">{{recensione.lavoro}}</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- /card -->
+                                <!-- /card -->
 
-                            <div class="d-flex">
-                                <div class="dot" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'attivo': '' "></div>
-                                <!-- /dot -->
-                            </div>
+                                <div class="d-flex">
+                                    <div class="dot" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'attivo': '' "></div>
+                                    <!-- /dot -->
+                                </div>
 
+                            </div>
+        
+                            <div class="next" @click="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <!-- /.prev -->
                         </div>
-    
-                        <div class="next" @click="next">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                        <!-- /.prev -->
                     </div>
 
                 </section>
                 <!-- /#recensioni -->
-
+                
                 <section id="start">
-                    <img src="" alt="">
+                    <img src="./assets/img/maxcoach-shape-01.png" alt="">
                     <div>
-                        <h5></h5>
-                    <h2></h2>
-                    <button></button>
+                        <h5 class="color_blue">Start todat for getting <span class="color_acqua">Online certification</span></h5>
+                        <h2 class="color_blue">You can be your own guiding star with your help</h2>
+                        <button class="button">Get started now</button>
                     </div>
-                    <img src="" alt="">
+                    <img src="./assets/img/maxcoach-shape-02.png" alt="">
                 </section>
                 <!-- /#start -->
 
