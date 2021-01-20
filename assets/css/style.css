@@ -532,3 +532,60 @@ i.fa-long-arrow-alt-right{
     text-align: center;
     font-size: 0.7rem;
 }
+/* /data */
+#insights{
+    background-color: #c99f8e1e;
+    padding: 50px 0;
+}
+
+#insights > div{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+#insights h6, #insights .card span{
+    color: #aeadae;
+    text-transform: uppercase;
+}
+
+#insights h2, #insights a, #insights .card p{
+    color: #48495f;
+    text-transform: capitalize;
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+#insights > div > div.d-flex{
+    flex-direction: column;
+} 
+
+#insights .card{
+    background-color: white;
+    cursor: pointer;
+    width: 300px;
+    margin: 0 20px;
+}
+
+#insights .card:hover{
+    box-shadow: 1px 1px 50px 1px lightgrey;
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+
+#insights .card img{
+    width: 100%;
+}
+
+#insights .card div{
+    padding: 30px;
+}
+
+#insights .card div span{
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+
+#insights .card div span i{
+    margin: 5px;
+}
