@@ -499,3 +499,36 @@ i.fa-long-arrow-alt-right{
 #start img:first-child{
     height: 30px;
 }
+/* /start */
+#data{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#data .card{
+    padding: 80px 40px;
+    border: 1px solid #f3f6f5;
+}
+
+#data .card h6{
+    color: #48495f;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#data .card h2{
+    color: #1fad96;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#data .card h6:nth-child(3){
+    text-transform: uppercase;
+    color: #aeadae;
+    text-align: center;
+    font-size: 0.7rem;
+}
