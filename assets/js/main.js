@@ -99,18 +99,23 @@ let root = new Vue ({
                 lavoro:'/Developer',
             }
         ],
+        address:['382 NE 191st ST # 87394 Miami, FL 33179-3899', '+1(305)547-9909(9am - 5pm EST, Monday - Friday)', 'support@maxcoach.com'],
         counter: 0,
     },
     methods:{
         next(){
             if(this.counter == (this.recensioni.length - 1)){
                 this.counter = 0;
-            }else(this.counter++)
+            }else{
+                this.counter++;
+            }
         },
         prev(){
             if(this.counter == 0){
                 this.counter = (this.recensioni.length - 1);
-            }else(this.counter--)
+            }else{
+                this.counter--;
+            }
         }
     }
 })

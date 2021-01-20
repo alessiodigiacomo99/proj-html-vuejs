@@ -226,6 +226,36 @@
         
                             <div class="carte">
 
+                                <div class="card" v-for= "(recensione, index) in recensioni" :class="index - 1 === counter ? 'semi-active': 'd-none' ">
+                                    <h4 class="color_blue">{{recensione.titolo}}</h4>
+                                    <p>{{recensione.p}}</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>{{recensione.nome}}</h5>
+                                            <div class="color_grey">{{recensione.lavoro}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /card -->
+
+                                <div v-if="counter == 3" class="card semi-active" >
+                                    <h4 class="color_blue">{{recensioni[0].titolo}}</h4>
+                                    <p>{{recensioni[0].p}}</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img :src="'./assets/img/testimonial-avata-'+ recensioni[0].img + '.jpg'" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>{{recensioni[0].nome}}</h5>
+                                            <div class="color_grey">{{recensioni[0].lavoro}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /card -->
+
                                 <div class="card" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'active': 'd-none' ">
                                     <h4 class="color_blue">{{recensione.titolo}}</h4>
                                     <p>{{recensione.p}}</p>
@@ -241,17 +271,48 @@
                                 </div>
                                 <!-- /card -->
 
-                                <div class="d-flex">
-                                    <div class="dot" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'attivo': '' "></div>
-                                    <!-- /dot -->
+                                <div v-if="counter == 0" class="card semi-active" >
+                                    <h4 class="color_blue">{{recensioni[3].titolo}}</h4>
+                                    <p>{{recensioni[3].p}}</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img :src="'./assets/img/testimonial-avata-'+ recensioni[3].img + '.jpg'" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>{{recensioni[3].nome}}</h5>
+                                            <div class="color_grey">{{recensioni[3].lavoro}}</div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- /card -->
 
+                                <div class="card" v-for= "(recensione, index) in recensioni" :class="index + 1 === counter ? 'semi-active': 'd-none' ">
+                                    <h4 class="color_blue">{{recensione.titolo}}</h4>
+                                    <p>{{recensione.p}}</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>{{recensione.nome}}</h5>
+                                            <div class="color_grey">{{recensione.lavoro}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /card -->
+                                
                             </div>
-        
+                            
                             <div class="next" @click="next">
                                 <i class="fas fa-chevron-right"></i>
                             </div>
                             <!-- /.prev -->
+
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="dot" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'attivo': '' "></div>
+                            <!-- /dot -->
                         </div>
                     </div>
 
@@ -381,13 +442,11 @@
                 <div>
 
                     <div>
-                        <h5></h5>
-                        <ul id="addres">
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <h5>Address</h5>
+                        <ul id="address">
+                            <li v-for="info in address">{{info}}</li>
                         </ul>
-                        <!-- /#addres -->
+                        <!-- /#address -->
                         <ul id="social">
                             
                         </ul>
