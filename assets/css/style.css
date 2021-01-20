@@ -589,3 +589,40 @@ i.fa-long-arrow-alt-right{
 #insights .card div span i{
     margin: 5px;
 }
+/* /insights */
+#newsletters{
+    padding: 50px 0;
+    position: relative;
+}
+
+#newsletters > div{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#newsletters h2{
+    color: #48495f;
+    text-transform: capitalize;
+}
+
+#newsletters p{
+    color: #aeadae;
+    margin: 20px 0;
+}
+
+#newsletters input{
+    padding: 15px 30px;
+    border: 0;
+    outline: 0;
+    background-color: #f3f6f5;
+    margin-right: -5px;
+    width: 300px;
+}
+
+#newsletters img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
