@@ -18,6 +18,11 @@ ul{
 a{
     text-decoration: none;
 }
+
+i.fa-long-arrow-alt-right{
+    vertical-align: middle;
+}
+
 .button{
     color: white;
     background-color: #1fad96;
@@ -116,10 +121,6 @@ a{
     font-weight: 700;
 }
 
-#jumbotron a span i{
-    vertical-align: bottom;
-}
-
 #jumbotron > div:nth-child(2){
     height: 600px;
     position: relative;
@@ -179,7 +180,6 @@ a{
 }
 
 #courses > div:first-child{
-    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -199,7 +199,9 @@ a{
 #courses > div:nth-child(2){
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end
+    width: 90%;
+    margin: auto;
+    justify-content: center;
 }
 
 .corso{
@@ -244,3 +246,53 @@ a{
 .corso > div.d-flex span{
     margin-right: 10px;
 }
+/* /courses */
+#smart_tutoring{
+    padding: 50px 0;
+}
+
+#smart_tutoring h6{
+    text-transform: uppercase;
+    color: #aeadae;
+    text-align: center;
+}
+
+#smart_tutoring h2{
+    text-transform: capitalize;
+    color: #48495f;
+    text-align: center;
+    margin: 10px;
+}
+
+/* #smart_tutoring div.d-flex{
+    justify-content: center;
+} */
+#smart_tutoring{
+    width: 90%;
+    margin: auto;
+}
+
+#smart_tutoring > div:nth-child(2){
+    justify-content: center;
+}
+
+#smart_tutoring .card{
+    margin: 50px;
+    flex-basis: calc(100% / 3);
+}
+
+#smart_tutoring .card h3{
+    text-transform: capitalize;
+    color: #48495f;
+    margin: 10px 0;
+}
+
+#smart_tutoring .card p, #smart_tutoring .card a{
+    color: #aeadae;
+    margin: 10px 0;
+}
+
+#smart_tutoring .card a{
+    font-weight: 700;
+}
+/* /smart_tutoring */
