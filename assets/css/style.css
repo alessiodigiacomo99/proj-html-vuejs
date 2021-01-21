@@ -64,6 +64,10 @@ span.color_acqua{
     font-weight: 400;
 }
 /* /utility class */
+#site_header{
+    position: relative;
+}
+
 #navbar{
     height: 60px;
     align-items: center;
@@ -200,6 +204,24 @@ span.color_acqua{
     top: 20%;
     right: 5%;
     z-index: 0;
+}
+
+#jumbotron ul{
+    flex-direction: column;
+    box-shadow: -2px -2px 2px 2px #f3f6f5;
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+#jumbotron ul li{
+    align-self: center;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+#jumbotron ul li i{
+    color: #48495f;
 }
 /* /jumbotron */
 #partners{
@@ -750,3 +772,56 @@ span.color_acqua{
     right: 5px;
 }
 
+@media screen and (max-width: 768px){
+    #navbar ul, #navbar #search, #jumbotron > div:nth-child(2), #jumbotron ul, #video div.profilo, #recensioni .semi-active, #start img, #insights div.d-flex > div.d-flex, #newsletters img, #site_footer > div.d-flex > div.d-flex{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    #jumbotron > div:first-child{
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    #partners, #smart_tutoring > div:nth-child(2), #data{
+        flex-wrap: wrap;
+    }
+
+    .corso{
+        flex-basis: 100%;
+    }
+
+    #smart_tutoring .card{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #video{
+        margin: 0 10px;
+    }
+
+    #video > div{
+        padding-bottom: 100px;
+    }
+
+    #recensioni .card{
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    #video > div > div:nth-child(2), #smart_tutoring, #newsletters > div, #data{
+        width: 90%;
+        margin: auto;
+    }  
+}
+/* #data .card{
+    padding: 40px 10px;
+} */
