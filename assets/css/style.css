@@ -419,24 +419,7 @@ i.fa-long-arrow-alt-right{
 
 .active{
     display: block;
-    animation-name: opacità;
-    animation-duration: 1s;
 }
-
-@keyframes opacità{
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
-
-.attivo{
-    background-color: #48495f;
-}
-
 
 #recensioni .card{
     padding: 25px;
@@ -478,13 +461,19 @@ i.fa-long-arrow-alt-right{
 
 #recensioni > div > div.d-flex:last-child{
     justify-content: center;
+    align-items: center;
+}
+
+#recensioni .attivo{
+    background-color: #48495f!important;
+    padding: 5px!important;
 }
 
 #recensioni .dot{
+    padding: 3px;
+    background-color: #aeadae;
     width: 0;
     height: 0;
-    padding: 5px;
-    border: 2px solid #48495f;
     border-radius: 50%;
     margin: 5px;
 }
@@ -636,3 +625,67 @@ i.fa-long-arrow-alt-right{
     transform: translateY(-50%);
     right: 10%;
 }
+/* /newsletter */
+/* /main */
+#site_footer{
+    background-color: #f3f6f5;
+    padding: 50px 0 30px 0;
+}
+
+#site_footer > div.d-flex{
+    justify-content: space-around;
+}
+
+#site_footer h5{
+    color: #48495f;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#site_footer li{
+    margin: 10px 0;
+}
+
+#social li{
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+#site_footer #social li a{
+    color: #aeadae;
+}
+
+#site_footer li a{
+    color: #48495f;
+}
+
+#site_footer .explore{
+    margin: 0px 40px 0px 0px;
+}
+
+
+#copyright{
+    text-transform: capitalize;
+    color: #aeadae;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#arrow{
+    width: 20px;
+    height: 20px;
+    background-color: #1fad96;
+    padding: 30px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    float: right;
+    margin: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+

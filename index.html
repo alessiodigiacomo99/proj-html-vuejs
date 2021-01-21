@@ -439,52 +439,99 @@
     
             <footer id="site_footer">
 
-                <div>
+                <div class="d-flex">
 
                     <div>
                         <h5>Address</h5>
                         <ul id="address">
-                            <li v-for="info in address">{{info}}</li>
+                            <li v-for="info in address">
+                                <a href="#">{{info}}</a>
+                            </li>
                         </ul>
                         <!-- /#address -->
-                        <ul id="social">
-                            
+
+                        <ul id="social" class="d-flex">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
                         </ul>
                         <!-- /#social -->
                     </div>
     
                     <div>
-                        <h5></h5>
-                        <ul id="explore">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <h5>Explore</h5>
+                        <div class="d-flex">
+                            <ul class="explore">
+                                <li>
+                                    <a href="#">Start here</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                            </ul>
+                            <ul class="explore">
+                                <li>
+                                    <a href="#">Succes story</a>
+                                </li>
+                                <li>
+                                    <a href="#">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
                         <!-- /#explore -->
                     </div>
     
                     <div>
-                        <h5></h5>
+                        <h5>information</h5>
                         <ul id="information">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <a href="#">Membership</a>
+                            </li>
+                            <li>
+                                <a href="#">Purchase guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy police</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of service</a>
+                            </li>
                         </ul>
                         <!-- /#information -->
                     </div>
+
                 </div>
 
                 <div id="copyright">
-
+                    &#169;2020 maxcoach, All rights reserved
                 </div>
                 <!-- /#copyright -->
 
-                <div id="arrow">
-
+                <div id="arrow" @click="scroll">
+                    <i class="fas fa-arrow-up"></i>
                 </div>
                 <!-- /#arrow -->
             </footer>
