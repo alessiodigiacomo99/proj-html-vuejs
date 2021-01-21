@@ -23,29 +23,14 @@
                     <!-- /logo -->
                     
                     <ul class="d-flex">
-                        <li>
-                            home
+                        <li v-for="link in navbar">
+                            <a href="#">{{link}}</a>
                             <i class="fas fa-chevron-down"></i>
                         </li>
                         <li>
-                            pages
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            courses
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            features
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            blog
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            shop
-                            <i class="fas fa-chevron-down"></i>
+                            <a href="#">
+                                <i class="far fa-user"></i>
+                            </a>
                         </li>
                     </ul>
 
@@ -77,17 +62,14 @@
 
                     <div>
                         <span>
-                            <div>
-                                <img src="./assets/img/maxcoach-shape-08.png" alt="">
-                            </div>
-                            <div>
-                                <img src="./assets/img/maxcoach-shape-08.png" alt="">
-                            </div>
+                            <img src="./assets/img/maxcoach-shape-08.png" alt="">
+                            <img src="./assets/img/maxcoach-shape-08.png" alt="">
                         </span>
                         <img src="./assets/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="" class="profilo">
                         <img src="./assets/img/maxcoach-shape-07.png" alt="">
                         <img src="./assets/img/maxcoach-shape-02.png" alt="">
                     </div>
+
                 </div>
                 <!-- /#jumbotron -->
 
@@ -158,8 +140,10 @@
                             <h3>customize preferences</h3>
                             <p>Learners ar given the right to arrange and customize their study schedule and timetable based on preferences</p>
                             <a href="#">
-                                Start here
-                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <span>
+                                    Start here
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
                             </a>
                         </div>
                         <!-- /card -->
@@ -169,8 +153,10 @@
                             <h3>cloud storage</h3>
                             <p>You can store online lessons via online cloud or download to your device and revice lessons on the way</p>
                             <a href="#">
-                                Get Free Quote
-                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <span>
+                                    Get Free Quote
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
                             </a>
                         </div>
                         <!-- /card -->
@@ -180,8 +166,10 @@
                             <h3>Multimedia channels</h3>
                             <p>We provide studio materials with various formats: video, audio, slides, doc, prints, books and applications</p>
                             <a href="#">
-                                Start now
-                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <span>
+                                    Start now
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
                             </a>
                         </div>
                         <!-- /card -->
@@ -190,125 +178,119 @@
                 </section>
                 <!-- /#smart_tutoring -->
 
-                <section id="video" class="d-flex">
+                <section id="video">
                     
-                    <div class="profilo">
-                        <div></div>
-                        <img src="./assets/img/icon-youtube-play.png" alt="">
-                        <img src="./assets/img/maxcoach-shape-07.png" alt="">
-                        <img src="./assets/img/maxcoach-shape-05.png" alt="">
-                    </div>
-
-                    <div>
-                        <h6>get started <span class="color_blue">effortlessly</span></h6>
-                        <h2>enjoy our <span class="color_acqua">companionship</span></h2>
-                        <p>Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for same hidden hints of early-bird reward as well.</p>
-                        <a href="#">
-                            Download free guidebook
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </a>
+                    <div class="d-flex">
+                        <div class="profilo">
+                            <div></div>
+                            <a href="https://www.youtube.com/watch?v=ElFJ1qcl74U">
+                                <img src="./assets/img/icon-youtube-play.png" alt="">
+                            </a>
+                            <img src="./assets/img/maxcoach-shape-07.png" alt="">
+                            <img src="./assets/img/maxcoach-shape-05.png" alt="">
+                        </div>
+    
+                        <div>
+                            <h6>get started <span class="color_blue">effortlessly</span></h6>
+                            <h2>enjoy our <span class="color_acqua">companionship</span></h2>
+                            <p>Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for same hidden hints of early-bird reward as well.</p>
+                            <a href="#">
+                                <span>
+                                    Download free guidebook
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
 
                 </section>
                 <!-- /#video -->
 
                 <section id="recensioni">
+
                     <div>
                         <h6>great word about maxcoach</h6>
                         <h2>Our <span class="color_acqua">top learners'</span> verbatim</h2>
-
-                        <div class="d-flex">
-
-                            <div class="prev" @click= "prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </div>
-                            <!-- /next -->
         
-                            <div class="carte">
+                        <div class="carte d-flex">
 
-                                <div class="card" v-for= "(recensione, index) in recensioni" :class="index - 1 === counter ? 'semi-active': 'd-none' ">
-                                    <h4 class="color_blue">{{recensione.titolo}}</h4>
-                                    <p>{{recensione.p}}</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
-                                        </div>
-                                        <div>
-                                            <h5>{{recensione.nome}}</h5>
-                                            <div class="color_grey">{{recensione.lavoro}}</div>
-                                        </div>
+                            <div class="card" v-for= "(recensione, index) in recensioni" :class="index - 1 === counter ? 'semi-active': 'd-none' ">
+                                <h4 class="color_blue">{{recensione.titolo}}</h4>
+                                <p>{{recensione.p}}</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>{{recensione.nome}}</h5>
+                                        <div class="color_grey">{{recensione.lavoro}}</div>
                                     </div>
                                 </div>
-                                <!-- /card -->
-
-                                <div v-if="counter == 3" class="card semi-active" >
-                                    <h4 class="color_blue">{{recensioni[0].titolo}}</h4>
-                                    <p>{{recensioni[0].p}}</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img :src="'./assets/img/testimonial-avata-'+ recensioni[0].img + '.jpg'" alt="">
-                                        </div>
-                                        <div>
-                                            <h5>{{recensioni[0].nome}}</h5>
-                                            <div class="color_grey">{{recensioni[0].lavoro}}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /card -->
-
-                                <div class="card" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'active': 'd-none' ">
-                                    <h4 class="color_blue">{{recensione.titolo}}</h4>
-                                    <p>{{recensione.p}}</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
-                                        </div>
-                                        <div>
-                                            <h5>{{recensione.nome}}</h5>
-                                            <div class="color_grey">{{recensione.lavoro}}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /card -->
-
-                                <div v-if="counter == 0" class="card semi-active" >
-                                    <h4 class="color_blue">{{recensioni[3].titolo}}</h4>
-                                    <p>{{recensioni[3].p}}</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img :src="'./assets/img/testimonial-avata-'+ recensioni[3].img + '.jpg'" alt="">
-                                        </div>
-                                        <div>
-                                            <h5>{{recensioni[3].nome}}</h5>
-                                            <div class="color_grey">{{recensioni[3].lavoro}}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /card -->
-
-                                <div class="card" v-for= "(recensione, index) in recensioni" :class="index + 1 === counter ? 'semi-active': 'd-none' ">
-                                    <h4 class="color_blue">{{recensione.titolo}}</h4>
-                                    <p>{{recensione.p}}</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
-                                        </div>
-                                        <div>
-                                            <h5>{{recensione.nome}}</h5>
-                                            <div class="color_grey">{{recensione.lavoro}}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /card -->
-                                
                             </div>
+                            <!-- /card -->
+
+                            <div v-if="counter == 3" class="card semi-active" >
+                                <h4 class="color_blue">{{recensioni[0].titolo}}</h4>
+                                <p>{{recensioni[0].p}}</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img :src="'./assets/img/testimonial-avata-'+ recensioni[0].img + '.jpg'" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>{{recensioni[0].nome}}</h5>
+                                        <div class="color_grey">{{recensioni[0].lavoro}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /card -->
+
+                            <div class="card" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'active': 'd-none' ">
+                                <h4 class="color_blue">{{recensione.titolo}}</h4>
+                                <p>{{recensione.p}}</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>{{recensione.nome}}</h5>
+                                        <div class="color_grey">{{recensione.lavoro}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /card -->
+
+                            <div v-if="counter == 0" class="card semi-active" >
+                                <h4 class="color_blue">{{recensioni[3].titolo}}</h4>
+                                <p>{{recensioni[3].p}}</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img :src="'./assets/img/testimonial-avata-'+ recensioni[3].img + '.jpg'" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>{{recensioni[3].nome}}</h5>
+                                        <div class="color_grey">{{recensioni[3].lavoro}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /card -->
+
+                            <div class="card" v-for= "(recensione, index) in recensioni" :class="index + 1 === counter ? 'semi-active': 'd-none' ">
+                                <h4 class="color_blue">{{recensione.titolo}}</h4>
+                                <p>{{recensione.p}}</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img :src="'./assets/img/testimonial-avata-'+ recensione.img + '.jpg'" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>{{recensione.nome}}</h5>
+                                        <div class="color_grey">{{recensione.lavoro}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /card -->
                             
-                            <div class="next" @click="next">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <!-- /.prev -->
-
                         </div>
+                        <!-- /carte -->
 
                         <div class="d-flex">
                             <div class="dot" v-for= "(recensione, index) in recensioni" :class="index === counter ? 'attivo': '' "></div>
@@ -423,7 +405,7 @@
                     <div>
                         <h2>subscribe <span class="color_acqua">newsletters</span></h2>
                         <p>Enter your email addres to register to our newsletter subscription delivered on a regular basis!</p>
-                        <form action="">
+                        <form action="get">
                             <input type="email" placeholder="Enter your email" required>
                             <button type="submit" class="button">Subscribe</button>
                         </form>
@@ -475,51 +457,53 @@
                         <!-- /#social -->
                     </div>
     
-                    <div>
-                        <h5>Explore</h5>
-                        <div class="d-flex">
-                            <ul class="explore">
+                    <div class="d-flex">
+                        <div>
+                            <h5>Explore</h5>
+                            <div class="d-flex">
+                                <ul class="explore">
+                                    <li>
+                                        <a href="#">Start here</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                </ul>
+                                <ul class="explore">
+                                    <li>
+                                        <a href="#">Succes story</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Courses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /#explore -->
+    
+                        <div>
+                            <h5>information</h5>
+                            <ul id="information">
                                 <li>
-                                    <a href="#">Start here</a>
+                                    <a href="#">Membership</a>
                                 </li>
                                 <li>
-                                    <a href="#">Blog</a>
+                                    <a href="#">Purchase guide</a>
                                 </li>
                                 <li>
-                                    <a href="#">About us</a>
-                                </li>
-                            </ul>
-                            <ul class="explore">
-                                <li>
-                                    <a href="#">Succes story</a>
+                                    <a href="#">Privacy police</a>
                                 </li>
                                 <li>
-                                    <a href="#">Courses</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact us</a>
+                                    <a href="#">Terms of service</a>
                                 </li>
                             </ul>
                         </div>
-                        <!-- /#explore -->
-                    </div>
-    
-                    <div>
-                        <h5>information</h5>
-                        <ul id="information">
-                            <li>
-                                <a href="#">Membership</a>
-                            </li>
-                            <li>
-                                <a href="#">Purchase guide</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy police</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms of service</a>
-                            </li>
-                        </ul>
                         <!-- /#information -->
                     </div>
 

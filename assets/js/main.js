@@ -1,6 +1,7 @@
 let root = new Vue ({
     el: '#root',
     data:{
+        navbar:['home', 'pages', 'courses', 'features', 'blog', 'shop'],
         partners:[
             {
                 img: '01'
@@ -124,5 +125,10 @@ let root = new Vue ({
                 behavior: 'smooth'
             });
         }
+    },
+    mounted(){
+        setInterval(() => {
+            this.next()
+        }, 3000);
     }
 })
