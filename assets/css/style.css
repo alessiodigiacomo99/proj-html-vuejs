@@ -816,12 +816,17 @@ span.color_acqua{
 
     .corso{
         flex-basis: 100%;
+        justify-content: center;
     }
 
     #smart_tutoring .card{
         display: flex;
         flex-direction: column;
         margin: 20px;
+    }
+
+    #smart_tutoring > div.d-flex > div.card img{
+        width: fit-content;
     }
 
     #video{
