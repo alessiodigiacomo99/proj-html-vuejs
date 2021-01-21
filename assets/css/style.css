@@ -772,6 +772,26 @@ span.color_acqua{
     right: 5px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #navbar #search{
+        display: none;
+    }
+
+    #navbar ul{
+        margin: 0;
+    }
+
+    #jumbotron > div:nth-child(2){
+        height: 400px;
+        width: 500px;
+    }
+
+    #jumbotron > div:first-child{
+        width: 70%;
+        padding: 50px 0;
+    }
+}
+
 @media screen and (max-width: 768px){
     #navbar ul, #navbar #search, #jumbotron > div:nth-child(2), #jumbotron ul, #video div.profilo, #recensioni .semi-active, #start img, #insights div.d-flex > div.d-flex, #newsletters img, #site_footer > div.d-flex > div.d-flex{
         display: none;
@@ -822,6 +842,40 @@ span.color_acqua{
         margin: auto;
     }  
 }
-/* #data .card{
-    padding: 40px 10px;
-} */
+
+@media screen and (max-width: 480px){
+    .corso > div:first-child{
+        height: 100px;
+        width: 100px;
+    }
+
+    #recensioni .card{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #data .card{
+        padding: 40px 10px;
+    } 
+
+    #insights div.d-flex > div.d-flex{
+        display: flex;
+    }
+
+    #insights div.card{
+        display: none;
+    }
+
+    #newsletter{
+        width: 100%;
+    }
+
+    #newsletters .button{
+        margin-top: 20px    ;
+    }
+
+    #arrow{
+        padding: 25px;
+    }
+
+}
